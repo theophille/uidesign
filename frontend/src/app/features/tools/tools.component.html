@@ -1,0 +1,12 @@
+<div class="tools-container">
+  <ul class="tools-list">
+    @for (tool of tools(); track $index) {
+      <li class="tool-icon"
+        [ngClass]="{'active-tool': activeTool() == $index}"
+        (click)="onToolClick($index)">
+        <img [src]="tool.icon" [alt]="tool.tool"
+          width="23" height="23">
+      </li>
+    }
+  </ul>
+</div>

@@ -1,0 +1,41 @@
+@import '../../shared/styles/shared-styles.scss';
+
+.tools-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: $mid-gray;
+  margin-top: 15px;
+  border-radius: $tools-border;
+}
+
+.tools-list {
+  @include flex();
+
+  > .tool-icon:first-child {
+    border-top-left-radius: $tools-border;
+    border-bottom-left-radius: $tools-border;
+  }
+
+  > .tool-icon:last-child {
+    border-top-right-radius: $tools-border;
+    border-bottom-right-radius: $tools-border;
+  }
+}
+
+.tool-icon {
+  padding: 10px;
+  text-align: center;
+  height: 23px;
+
+}
+
+.tool-icon:hover {
+  background-color: $main-theme-blue;
+  cursor: pointer;
+}
+
+.active-tool {
+  background-color: $main-theme-blue;
+}

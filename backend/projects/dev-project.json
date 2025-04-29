@@ -1,0 +1,6 @@
+{
+  "pages": [
+    { "name": "Page 1", "width": 1920, "height": 1080 },
+    { "name": "Page 2", "width": 800, "height": 400 }
+  ]
+}

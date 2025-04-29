@@ -1,0 +1,19 @@
+@import '../../shared/styles/shared-styles.scss';
+
+:host {
+  position: relative;
+}
+
+.workspace-container {
+  @include flex();
+  width: 100%;
+  height: 100%;
+}
+
+.left-controls, .right-controls, .drawing-context {
+  height: 100%;
+}
+
+.drawing-context {
+  margin: 0 $box-gap;
+}

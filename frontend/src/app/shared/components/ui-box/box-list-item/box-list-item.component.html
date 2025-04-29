@@ -1,0 +1,13 @@
+<div class="box-list-item-container" [ngClass]="{'active': active}">
+  <div class="left">
+    @if (icon) {
+      <img [src]="icon" alt="icon" width="16">
+    } @else {
+      <div class="dot-container"></div>
+    }
+    <span>{{ label }}</span>
+  </div>
+  @if (actions) {
+    <img src="assets/icons/visibility.png" alt="action" width="16">
+  }
+</div>

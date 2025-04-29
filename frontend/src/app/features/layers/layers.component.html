@@ -1,0 +1,8 @@
+<uid-ui-box headerIcon="assets/icons/layer.png"
+  headerLabel="LAYERS"
+  [actions]="false"
+  [height]="height">
+  @for (layerData of layersListData; track $index) {
+    <uid-box-list-item [icon]="layerData.icon" [label]="layerData.label" [actions]="true" [active]="selectedLayers().includes($index)" (click)="onClick($index)"></uid-box-list-item>
+  }
+</uid-ui-box>

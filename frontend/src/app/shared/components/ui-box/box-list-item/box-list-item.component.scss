@@ -1,0 +1,31 @@
+@import '../../../styles/shared-styles.scss';
+
+.box-list-item-container {
+  @include flex();
+  padding: 15px $container-padding;
+
+}
+
+
+.active, .box-list-item-container:hover {
+  background-color: $main-theme-blue;
+}
+
+.left {
+  @include flex();
+
+  div {
+    display: inline-block;
+  }
+
+  span {
+    margin-left: $image-label-margin;
+  }
+}
+.dot-container {
+  width: $icon-size;
+  height: $icon-size;
+  background-color: $dark-gray;
+  border-radius: 100%;
+  border: 2px solid $light-gray;
+}

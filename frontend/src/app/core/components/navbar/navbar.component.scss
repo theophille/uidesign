@@ -1,0 +1,48 @@
+@import "../../../shared/styles/shared-styles.scss";
+
+.navbar {
+  @include flex();
+  width: 100%;
+  background-color: $mid-gray;
+}
+
+.settings {
+  @include flex(space-evenly, center);
+}
+
+.pages {
+  @include flex(space-evenly, center);
+}
+
+.nav-title {
+  @include centered();
+  font-weight: 600;
+}
+
+.navbar-container {
+  position: relative;
+}
+
+ul {
+  height: 100%;
+}
+
+.nav-button {
+  width: 130px;
+  height: 60px;
+  position: relative;
+  
+  span {
+    @include centered();
+  }
+
+}
+
+.nav-button:hover {
+  background-color: $main-theme-blue;
+  cursor: pointer;
+}
+
+.active-page {
+  background-color: $main-theme-blue;
+}

@@ -1,0 +1,13 @@
+<uid-ui-box headerIcon="assets/icons/blank-page.png"
+  headerLabel="PAGES"
+  [actions]="true"
+  [height]="height">
+  <ul>
+    @for (page of pages; track $index) {
+      <li><uid-box-list-item [label]="getPageLabel(page)"
+        [active]="selectedPage() == $index"
+        (click)="onPageSelect($index)">
+      </uid-box-list-item></li>
+    }
+  </ul>
+</uid-ui-box>

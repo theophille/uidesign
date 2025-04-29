@@ -1,0 +1,17 @@
+<uid-ui-box headerIcon="assets/icons/blank-page.png"
+  headerLabel="COLOR PALETTE"
+  [actions]="true"
+  [height]="height">
+  <div class="import-file">
+    <input (change)="fileChanged($event)" type="file" id="import">
+    <label for="import">From image</label>
+  </div>
+  @for (color of colors; track $index) {
+    <ul class="color-list">
+      <li class="color-item">
+        <div class="color" [style]="{'background-color': color}"></div>
+        <span>{{ rgbStringToHex(color).toUpperCase() }}</span>
+      </li>
+    </ul>
+  }
+</uid-ui-box>

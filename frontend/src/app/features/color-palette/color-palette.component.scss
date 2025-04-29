@@ -1,0 +1,39 @@
+@import '../../shared/styles/shared-styles.scss';
+
+input {
+  display: none;
+}
+
+.import-file {
+  position: relative;
+}
+
+label {
+  text-align: center;
+  background-color: $label-gray;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  display: block;
+  transition: 0.3s;
+}
+
+label:hover {
+  background-color: $main-theme-blue;
+}
+
+.color {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
+.color-item {
+  padding: 10px 20px;
+
+  span {
+    margin-left: 10px;
+  }
+}

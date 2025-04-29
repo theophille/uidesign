@@ -1,0 +1,138 @@
+<uid-ui-box headerIcon="assets/icons/blank-page.png"
+  headerLabel="TRANSFORM"
+  [actions]="true"
+  [height]="height">
+  @if (active()) {
+    <form [formGroup]="props">
+      <div class="container" formGroupName="transform">
+        <h3 class="section-name">TRANSFORM</h3>
+
+        <div class="field-container" >
+          <div class="label">Position</div>
+          <div class="field">
+            <span> X </span>
+            <input
+              class="text"
+              type="text"
+              formControlName="x"
+              (blur)="updateData('x')"
+              (keyup.enter)="updateData('x')">
+          </div>
+          <div class="field">
+            <span> Y </span>
+            <input
+              class="text"
+              type="text"
+              formControlName="y"
+              (blur)="updateData('y')"
+              (keyup.enter)="updateData('y')">
+          </div>
+        </div>
+
+        <div class="field-container">
+          <div class="label">Size</div>
+          <div class="field">
+            <span> W </span>
+            <input
+              class="text"
+              type="text"
+              formControlName="width"
+              (blur)="updateData('width')"
+              (keyup.enter)="updateData('width')">
+          </div>
+          <div class="field">
+            <span> H </span>
+            <input
+              class="text"
+              type="text"
+              formControlName="height"
+              (blur)="updateData('height')"
+              (keyup.enter)="updateData('height')">
+          </div>
+        </div>
+
+        <div class="field-container">
+          <div class="label">Rotation</div>
+          <div class="field">
+            <span> R </span>
+            <input
+              class="text"
+              type="text"
+              formControlName="rotation"
+              (blur)="updateData('rotation')"
+              (keyup.enter)="updateData('rotation')">
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="container" formGroupName="aspect">
+        <h3 class="section-name">ASPECT</h3>
+
+        @if (getInstance() !== 'line') {
+          <div class="field-container">
+            <div class="label">Fill</div>
+            <div class="field">
+              <input
+                type="color"
+                class="color"
+                formControlName="fill"
+                (change)="updateAspect('fill')">
+            </div>
+            <button class="button"><img src="assets/icons/visibility.png" alt="eye" width="14"></button>
+          </div>
+          
+          <div class="field-container">
+            <div class="label">Border</div>
+            <div class="field">
+              <input
+              type="color"
+              class="color"
+              formControlName="borderColor"
+              (change)="updateAspect('borderColor')">
+            </div>
+            <button class="button"><img src="assets/icons/visibility.png" alt="eye" width="14"></button>
+          </div>
+  
+          <div class="field-container">
+            <div class="field">
+              <span> Border Size: </span>
+              <input
+                class="text"
+                type="text"
+                formControlName="borderSize"
+                (blur)="updateAspect('borderSize')"
+                (keyup.enter)="updateAspect('borderSize')">
+            </div>
+          </div>
+        } @else {
+          <div class="field-container">
+            <div class="label">Color</div>
+            <div class="field">
+              <input
+                type="color"
+                class="color"
+                formControlName="color"
+                (change)="updateAspect('color')">
+            </div>
+            <button class="button"><img src="assets/icons/visibility.png" alt="eye" width="14"></button>
+          </div>
+
+          <div class="field-container">
+            <div class="field">
+              <span> Stroke Size: </span>
+              <input
+                class="text"
+                type="text"
+                formControlName="lineWidth"
+                (blur)="updateAspect('lineWidth')"
+                (keyup.enter)="updateAspect('lineWidth')">
+            </div>
+          </div>
+        }
+      </div>
+    </form>
+  }
+
+</uid-ui-box>

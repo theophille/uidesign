@@ -1,0 +1,18 @@
+@import "./colors.scss";
+@import "./sizes.scss";
+
+@mixin flex(
+  $justify: space-between,
+  $align-items: center
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align-items;
+}
+
+@mixin centered() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
