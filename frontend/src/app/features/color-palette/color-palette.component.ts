@@ -3,11 +3,10 @@ import { UiBoxComponent } from '../../shared/components/ui-box/ui-box.component'
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'uid-color-palette',
-  standalone: true,
-  imports: [UiBoxComponent, CommonModule],
-  templateUrl: './color-palette.component.html',
-  styleUrl: './color-palette.component.scss'
+    selector: 'uid-color-palette',
+    imports: [UiBoxComponent, CommonModule],
+    templateUrl: './color-palette.component.html',
+    styleUrl: './color-palette.component.scss'
 })
 export class ColorPaletteComponent {
   @Input() height: number = 50;

@@ -6,11 +6,10 @@ import { SizesService } from './shared/services/sizes.service';
 import { KeyboardService } from './core/services/keyboard.service';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, DesignSpaceComponent, NavbarComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    imports: [RouterOutlet, DesignSpaceComponent, NavbarComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild(NavbarComponent) navComponent!: NavbarComponent;

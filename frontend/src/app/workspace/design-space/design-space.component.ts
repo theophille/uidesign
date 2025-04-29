@@ -7,18 +7,17 @@ import { ToolsComponent } from '../../features/tools/tools.component';
 import { DrawingContextComponent } from '../../features/drawing-context/drawing-context.component';
 
 @Component({
-  selector: 'design-space',
-  standalone: true,
-  imports: [
-    PagesBoxComponent,
-    LayersComponent,
-    PropBoxComponent,
-    ColorPaletteComponent,
-    ToolsComponent,
-    DrawingContextComponent
-  ],
-  templateUrl: './design-space.component.html',
-  styleUrl: './design-space.component.scss'
+    selector: 'design-space',
+    imports: [
+        PagesBoxComponent,
+        LayersComponent,
+        PropBoxComponent,
+        ColorPaletteComponent,
+        ToolsComponent,
+        DrawingContextComponent
+    ],
+    templateUrl: './design-space.component.html',
+    styleUrl: './design-space.component.scss'
 })
 export class DesignSpaceComponent {
   constructor() {}

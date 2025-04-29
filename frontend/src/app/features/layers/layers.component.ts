@@ -12,11 +12,10 @@ import { Tool } from '../tools/tool.model';
 import { TransformService } from '../../shared/services/transform.service';
 
 @Component({
-  selector: 'uid-layers',
-  standalone: true,
-  imports: [UiBoxComponent, BoxListItemComponent],
-  templateUrl: './layers.component.html',
-  styleUrl: './layers.component.scss'
+    selector: 'uid-layers',
+    imports: [UiBoxComponent, BoxListItemComponent],
+    templateUrl: './layers.component.html',
+    styleUrl: './layers.component.scss'
 })
 export class LayersComponent implements OnInit {
   @Input() height: number = 50;

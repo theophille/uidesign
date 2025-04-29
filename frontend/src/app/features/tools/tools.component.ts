@@ -5,11 +5,10 @@ import { CommonModule } from '@angular/common';
 import { LayersService } from '../../shared/services/layers.service';
 
 @Component({
-  selector: 'uid-tools',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './tools.component.html',
-  styleUrl: './tools.component.scss'
+    selector: 'uid-tools',
+    imports: [CommonModule],
+    templateUrl: './tools.component.html',
+    styleUrl: './tools.component.scss'
 })
 export class ToolsComponent implements OnInit {
   tools: WritableSignal<Array<Tool>> = signal([]);

@@ -6,11 +6,10 @@ import { BoxListItemComponent } from '../../shared/components/ui-box/box-list-it
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'uid-pages-box',
-  standalone: true,
-  imports: [CommonModule, UiBoxComponent, BoxListItemComponent],
-  templateUrl: './pages-box.component.html',
-  styleUrl: './pages-box.component.scss'
+    selector: 'uid-pages-box',
+    imports: [CommonModule, UiBoxComponent, BoxListItemComponent],
+    templateUrl: './pages-box.component.html',
+    styleUrl: './pages-box.component.scss'
 })
 export class PagesBoxComponent implements OnInit{
   @Input() height: number = 50;

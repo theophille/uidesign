@@ -3,11 +3,10 @@ import { SizesService } from '../../../shared/services/sizes.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'navbar',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+    selector: 'navbar',
+    imports: [RouterLink, RouterLinkActive],
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent implements AfterViewInit {
   @ViewChild('navbar') navbarElement: ElementRef | undefined;

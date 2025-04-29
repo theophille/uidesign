@@ -7,11 +7,10 @@ import { TransformService } from '../../shared/services/transform.service';
 import { Shape } from '../../engine/drawables/shape';
 
 @Component({
-  selector: 'uid-prop-box',
-  standalone: true,
-  imports: [UiBoxComponent, ReactiveFormsModule],
-  templateUrl: './prop-box.component.html',
-  styleUrl: './prop-box.component.scss'
+    selector: 'uid-prop-box',
+    imports: [UiBoxComponent, ReactiveFormsModule],
+    templateUrl: './prop-box.component.html',
+    styleUrl: './prop-box.component.scss'
 })
 export class PropBoxComponent implements OnInit {
   @Input() height: number = 50;
